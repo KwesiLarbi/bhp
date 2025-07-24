@@ -11,7 +11,7 @@ def ssh_command(ip, port, user, passwd, command):
     ssh_session = client.get_transport().open_session()
     if ssh_session.active:
         ssh_session.send(command)
-        print(ssh_command.recv(1024).decode())
+        print(ssh_session.recv(1024).decode())
         while True:
             command = ssh_session.recv(1024)
             try:

@@ -30,8 +30,8 @@ if __name__ == '__main__':
     import getpass
 
     # user = getpass.getuser()
-    
-    ip = input('Enter username: ')
+
+    user = input('Enter username: ')
     password = getpass.getpass()
 
     ip = input('Enter server IP: ')
